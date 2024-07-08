@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="meezbaan_moderator">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>OfferBite Restaurant</title>
+  <link rel="manifest" href="manifest.json">
+  <!-- cropperjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8xRk8Bp2RElr_IvdGg9fRuCxoWpxCSVk"></script>
+</head>
+
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/firebase-messaging-sw.js");
+      });
+    }
+  </script>
+</body>
+
+</html>
